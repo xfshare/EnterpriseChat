@@ -1,0 +1,26 @@
+1.需要的类库
+    libxml2.dylib
+    libresolv.dylib
+    CFNetwork.framework
+    Security.framework
+
+2.libxml 框架使用
+
+Header Search Paths
+
+添加 "/usr/include/libxml2"
+
+Other Linker Flags
+
+添加 "-lxml2"
+
+Library Search Paths
+
+将"$(PROJECT_DIR)/....../libidn"
+
+修改为"$(PROJECT_DIR)"，并改为"recursive"
+
+    Buidl Settings
+        Search Paths
+            Header Search Paths
+                添加 ${SDK_ROOT}/usr/include/libxml2
