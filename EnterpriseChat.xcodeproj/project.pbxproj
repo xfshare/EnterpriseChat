@@ -15,6 +15,7 @@
 		04C32E031B5C876D002238CF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C32E021B5C876D002238CF /* ViewController.swift */; };
 		04C32E081B5C876D002238CF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04C32E071B5C876D002238CF /* Assets.xcassets */; };
 		04C32E2F1B5C87E8002238CF /* EnterpriseChat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C32E2E1B5C87E8002238CF /* EnterpriseChat.swift */; };
+		04C3364F1B60F86F001EF906 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 04C3364E1B60F86F001EF906 /* Info.plist */; };
 		04F0CCA91B5C8E040078003A /* XMPPAnonymousAuthentication.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F0CB381B5C8E040078003A /* XMPPAnonymousAuthentication.m */; };
 		04F0CCAA1B5C8E040078003A /* XMPPDeprecatedDigestAuthentication.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F0CB3B1B5C8E040078003A /* XMPPDeprecatedDigestAuthentication.m */; };
 		04F0CCAB1B5C8E040078003A /* XMPPDeprecatedPlainAuthentication.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F0CB3E1B5C8E040078003A /* XMPPDeprecatedPlainAuthentication.m */; };
@@ -185,6 +186,7 @@
 		04C32E021B5C876D002238CF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		04C32E071B5C876D002238CF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		04C32E2E1B5C87E8002238CF /* EnterpriseChat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EnterpriseChat.swift; sourceTree = "<group>"; };
+		04C3364E1B60F86F001EF906 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		04F0CB371B5C8E040078003A /* XMPPAnonymousAuthentication.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMPPAnonymousAuthentication.h; sourceTree = "<group>"; };
 		04F0CB381B5C8E040078003A /* XMPPAnonymousAuthentication.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMPPAnonymousAuthentication.m; sourceTree = "<group>"; };
 		04F0CB3A1B5C8E040078003A /* XMPPDeprecatedDigestAuthentication.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMPPDeprecatedDigestAuthentication.h; sourceTree = "<group>"; };
@@ -498,7 +500,6 @@
 		04F0CDB01B5CCA770078003A /* LaunchImage_ip6p@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LaunchImage_ip6p@3x.png"; sourceTree = "<group>"; };
 		04F0CDB11B5CCA770078003A /* LaunchImage_ip4@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LaunchImage_ip4@2x.png"; sourceTree = "<group>"; };
 		04F0CDB71B5CCEDF0078003A /* VKTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VKTool.swift; sourceTree = "<group>"; };
-		04F0CDBA1B5CDB560078003A /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Base; path = Base.lproj/Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -520,8 +521,8 @@
 		041FFC581B5CED860087B35D /* Config */ = {
 			isa = PBXGroup;
 			children = (
-				04F0CDBB1B5CDB560078003A /* Info.plist */,
 				041FFC541B5CECE60087B35D /* Localizable.strings */,
+				04C3364E1B60F86F001EF906 /* Info.plist */,
 				041FFC561B5CECFA0087B35D /* Main.storyboard */,
 				04C32E2E1B5C87E8002238CF /* EnterpriseChat.swift */,
 				04F0CD401B5C92BA0078003A /* EnterpriseChat-Bridging-Header.h */,
@@ -1624,6 +1625,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04C3364F1B60F86F001EF906 /* Info.plist in Resources */,
 				04F0CDAC1B5CC8C70078003A /* OpBigBtn@2x.png in Resources */,
 				044F11B41B5E117B00D14E80 /* PhoneNumberLogin.xib in Resources */,
 				04F0CD351B5C8E040078003A /* build-libidn.sh in Resources */,
@@ -1799,17 +1801,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		04F0CDBB1B5CDB560078003A /* Info.plist */ = {
-			isa = PBXVariantGroup;
-			children = (
-				04F0CDBA1B5CDB560078003A /* Base */,
-			);
-			name = Info.plist;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		04C32E231B5C876D002238CF /* Debug */ = {
