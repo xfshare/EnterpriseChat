@@ -10,17 +10,36 @@ import UIKit
 
 class PhoneNumberLogin: UIViewController {
 
+    @IBOutlet var vkDismissButton: UIButton!
+    
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: NSBundle?){
         super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
     }
     
     required init(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
+
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-//        self.view.backgroundColor! = UIColor(colorLiteralRed: 0.5, green: 0.2, blue: 1.0, alpha: 1.0)
+        self.view.backgroundColor! = UIColor(colorLiteralRed: 0.5, green: 0.2, blue: 1.0, alpha: 1.0)
+        
+        vk_createUI()
+    }
+    
+    
+    
+    //MARK:- dismiss
+    func vk_dismissViewController(){
+        self.dismissViewControllerAnimated(true) { () -> Void in
+            
+        };
+    }
+    
+    //MARK:- CreateUI
+    func vk_createUI(){
+        vkDismissButton.addTarget(self, action: Selector("vk_dismissViewController"), forControlEvents: UIControlEvents.TouchUpInside)
     }
     
     override func didReceiveMemoryWarning() {
